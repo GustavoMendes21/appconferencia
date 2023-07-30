@@ -1,13 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
-import { NativeBaseProvider } from 'native-base';
+import { NativeBaseProvider, extendTheme } from 'native-base';
 import { StyleSheet, Text, View } from 'react-native';
 import { Loading } from './src/components/Loading';
 import { Menu } from './src/screens/menu';
+import { Conferir } from './src/screens/conferir';
+import { useFonts } from 'expo-font';
+
+
 
 export default function App() {
   return (
     <NativeBaseProvider>
-      <Menu/>
+      <Conferir/>
     </NativeBaseProvider>
   );
 }
